@@ -1,0 +1,108 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+/* Reset dasar */
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  box-sizing: border-box;
+  font-family: "Poppins";
+}
+
+/* Ini adalah yang akan mengatur background gambar di seluruh halaman */
+html,
+body {
+  height: 100%; /* Pastikan elemen html dan body mengisi seluruh tinggi viewport */
+  width: 100%; /* Pastikan elemen html dan body mengisi seluruh lebar viewport */
+
+  /* Ini aturan untuk background gambar Anda */
+  background: url("../assets/img/foto.jpg") no-repeat center center fixed;
+  background-size: cover; /* Ini yang membuat gambar menutupi seluruh area */
+  background-color: #f0f0f0; /* Opsional: Warna fallback jika gambar tidak dimuat */
+}
+
+/* Global container (form wrapper) */
+.global-container {
+  height: 100%; /* Penting untuk flexbox agar mengisi tinggi parent (body) */
+  display: flex;
+  align-items: center; /* Memposisikan item (form) di tengah vertikal */
+  justify-content: center; /* Memposisikan item (form) di tengah horizontal */
+  /* HAPUS ATAU KOMENTARI background-color ini agar gambar di 'body' terlihat */
+  /* background-color: #166721; */
+  /* Jika Anda masih ingin efek overlay hijau transparan, gunakan rgba() */
+  /* background-color: rgba(22, 103, 33, 0.5); */ /* Hijau dengan opasitas 50% */
+}
+
+/* Gaya untuk formulir login */
+.login-form {
+  width: 330px;
+  margin: 20px;
+  background-color: white; /* Memberi latar belakang putih pada form itu sendiri */
+  padding: 30px; /* Padding di dalam form */
+  border-radius: 8px; /* Sudut membulat */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Efek bayangan */
+  text-align: center; /* Untuk menengahkan tulisan 'sokincek' dan 'Sign In' */
+}
+
+.login-form .card-title { /* Menggunakan .login-form untuk spesifisitas */
+  font-weight: 600; /* Sedikit lebih tebal */
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+form {
+  padding-top: 10px; /* Jarak atas untuk form di dalam .login-form */
+  font-size: 14px;
+  margin-top: 0; /* Sesuaikan atau hapus jika sudah ada padding di .login-form */
+}
+
+input[type="text"],
+input[type="password"] {
+  width: 100%;
+  padding: 10px 12px;
+  margin-bottom: 15px; /* Jarak antar input field */
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-sizing: border-box; /* Agar padding tidak menambah lebar */
+  font-size: 15px;
+}
+
+.btn {
+  font-size: 16px;
+  margin-top: 20px;
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  background-color: #007bff; /* Warna biru */
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #0056b3; /* Warna biru lebih gelap saat hover */
+}
+
+.sign-up {
+  text-align: center;
+  padding: 20px 0 0;
+  font-size: 14px;
+}
+
+.sign-up a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.sign-up a:hover {
+  text-decoration: underline;
+}
+
+.alert {
+  margin-bottom: -30px;
+  font-size: 13px;
+  margin-top: 20px;
+  color: red; /* Contoh warna untuk alert */
+}
